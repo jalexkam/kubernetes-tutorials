@@ -16,6 +16,7 @@ set_context:
 enable_iam_sa_provider:
 	eksctl utils associate-iam-oidc-provider --cluster=robin-personal-cluster --approve
 
+
 create_cluster_role:
 	kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/rbac-role.yaml
 
@@ -30,7 +31,7 @@ create_service_account:
       --cluster=robin-personal-cluster \
       --namespace=kube-system \
       --name=aws-load-balancer-controller \
-      --attach-policy-arn=arn:aws:iam::617960797257:policy/AWSLoadBalancerControllerIAMPolicy \
+      --attach-policy-arn=arn:aws:iam::933754675071:policy/AWSLoadBalancerControllerIAMPolicy \
       --override-existing-serviceaccounts \
       --approve
 

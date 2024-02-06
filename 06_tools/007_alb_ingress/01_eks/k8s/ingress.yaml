@@ -8,7 +8,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: instance
 spec:
   rules:
-    - host: foo.jomo.click
+    - host: foo.alexmelidevops.site
       http:
         paths:
           - path: /
@@ -18,7 +18,7 @@ spec:
                 name: foo-app-service
                 port:
                   number: 3000
-    - host: bar.jomo.click
+    - host: bar.alexmelidevops.site
       http:
         paths:
           - path: /

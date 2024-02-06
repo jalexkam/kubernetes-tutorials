@@ -12,3 +12,4 @@ nodeGroups:
     volumeSize: 80
     ssh:
       allow: true
+      publicKeyName: eks-ohio
